@@ -1,0 +1,37 @@
+batch_size: 8
+class_weight_power: 1.0
+clean_train_metrics: true
+data_dir: /kaggle/input/datasets/sushanthreddypotu/fives-dataset/FIVES A Fundus Image
+  Dataset for AI-based Vessel Segmentation/FIVES A Fundus Image Dataset for AI-based
+  Vessel Segmentation
+dataseed: 6142
+disable_tqdm: false
+dropout: 0.3
+early_stopping: 12
+epochs: 100
+focal_gamma: 1.5
+img_ext: .png
+input_h: 512
+input_w: 512
+label_smoothing: 0.05
+lr: 0.0001
+manual_class_weights: '{"0": 2.0}'
+mask_ext: .png
+mixup_alpha: 0.2
+model_type: single
+name: fives_effb0_single_512_class0_boost
+num_classes: 4
+num_workers: 4
+output_dir: /kaggle/working/outputs_cls
+pretrained: true
+resume_checkpoint: ''
+save_best_full: true
+save_freq: 5
+save_last: true
+train_labels_csv: /kaggle/input/datasets/sushanthreddypotu/fives-dataset/train_labels.csv
+train_mask_dir: /kaggle/input/datasets/sushanthreddypotu/july2ndweeksegoutputs/classifier_masks/fives_UKAN_cbamse_512/train/prob_maps
+use_class_weights: true
+use_focal: false
+use_mixup: true
+val_ratio: 0.2
+weight_decay: 0.0005

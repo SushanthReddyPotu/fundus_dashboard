@@ -1,0 +1,45 @@
+arch: UKAN
+attention_mode: cbam_se
+batch_size: 4
+cfg: null
+data_dir: /kaggle/input/datasets/sushanthreddypotu/fives-dataset/FIVES A Fundus Image
+  Dataset for AI-based Vessel Segmentation/FIVES A Fundus Image Dataset for AI-based
+  Vessel Segmentation
+dataseed: 6142
+dataset: fives
+deep_supervision: false
+disable_tqdm: false
+early_stopping: 20
+epoch_progress: true
+epochs: 120
+factor: 0.1
+gamma: 0.6666666666666666
+input_channels: 3
+input_h: 512
+input_list:
+- 128
+- 160
+- 256
+input_w: 512
+kan_lr: 0.001
+kan_weight_decay: 0.0001
+loss: BCEDiceLoss
+lr: 0.0001
+milestones: 1,2
+min_lr: 1.0e-05
+momentum: 0.9
+name: fives_UKAN_cbamse_512
+nesterov: false
+no_kan: false
+num_classes: 1
+num_workers: 4
+optimizer: Adam
+output_dir: /kaggle/working/outputs
+patience: 2
+resume_checkpoint: ''
+save_best_full: true
+save_freq: 5
+save_last: true
+scheduler: CosineAnnealingLR
+val_ratio: 0.2
+weight_decay: 0.0001
